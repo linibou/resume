@@ -1,5 +1,6 @@
 @import "settings";
 @import "foundation";
+@import "mixins";
 
 // Or selectively include components
 // @import
@@ -38,3 +39,55 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+@import url(https://fonts.googleapis.com/css?family=Cantarell:400,700);
+
+h3,h4,h5{
+    font-family: Cantarell "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: bold;
+}
+
+h4.jobs{
+    margin-bottom: 50px;
+}
+
+header{
+    background: #ff8b1f;
+    padding: 20px 0 20px;
+    h1, h2{
+        font-family: $font-family-sans-serif;
+    }
+    .contact{
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 50px;
+        p{
+            margin: 10px 0;
+            font-size: rem-calc(25);
+        }
+    }
+}
+section{
+    padding-top: 30px;
+    .xpbox{
+        margin-top: 30px;
+    }
+    p.skills{
+        line-height: 175%;
+    }
+}
+div .xpbox{
+    margin-bottom: 30px;
+}
+.xpbox{
+    h5{
+        color: #fff;
+        margin-bottom: 4px;
+    }
+    color: #fff;
+    background: #ff7f2a;
+    padding: 7px 5px 7px;
+}
+.profile{
+    @include border-radius(100px);
+}
