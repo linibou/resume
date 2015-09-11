@@ -54,12 +54,10 @@ header{
         font-family: $font-family-sans-serif;
     }
     .contact{
-        display: inline-block;
-        margin-top: 30px;
-        margin-left: 50px;
+        margin: 0 auto;
         p{
             margin: 10px 0;
-            font-size: rem-calc(25);
+            font-size: rem-calc(20);
         }
     }
 }
@@ -76,16 +74,6 @@ section{
         position: relative;
         line-height: 175%;
     }
-    .tagcloud{
-        position: absolute;
-        bottom: -9px;
-        &.cloudleft{
-            left: 0;
-        }
-        &.cloudright{
-            right: 0;
-        }
-    }
     .xpbox{
         margin-top: 55px;
         h5{
@@ -101,3 +89,61 @@ section{
 .profile{
     @include border-radius(100px);
 }
+@media #{$small-up}{
+    #mainrow{
+        h4.jobs{
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        .skills{
+            line-height: 115%;
+        }
+        .xpbox{
+            margin-top: 25px;
+        }
+        .admincolumn, .devcolumn{
+            text-align: center;
+        }
+    }
+}
+
+@media #{$medium-up}{
+    #mainrow{
+        .xpbox{
+            margin-top: 25px;
+        }
+        .tagcloud{
+            position: absolute;
+            bottom: -9px;
+            &.cloudleft{
+                left: 0;
+            }
+            &.cloudright{
+                right: 0;
+            }
+        }
+        .devcolumn{
+            text-align: right;
+        }
+        .admincolumn{
+            text-align: left;
+        }
+    }
+}
+
+@media #{$large-up}{
+    .contact{
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    #mainrow{
+        .xpbox{
+            margin-top: 55px;
+        }
+        .skills{
+            line-height: 175%;
+        }
+    }
+}
+
