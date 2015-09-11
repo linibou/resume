@@ -47,10 +47,6 @@ h3,h4,h5{
     font-weight: bold;
 }
 
-h4.jobs{
-    margin-bottom: 50px;
-}
-
 header{
     background: #ff8b1f;
     padding: 20px 0 20px;
@@ -67,27 +63,41 @@ header{
         }
     }
 }
+
 section{
-    padding-top: 30px;
-    .xpbox{
-        margin-top: 30px;
+    padding-top: 25px;
+}
+
+#mainrow{
+    h4.jobs{
+        margin-bottom: 40px;
     }
-    p.skills{
+    .skills{
+        position: relative;
         line-height: 175%;
     }
-}
-div .xpbox{
-    margin-bottom: 30px;
-}
-.xpbox{
-    h5{
-        color: #fff;
-        margin-bottom: 4px;
+    .tagcloud{
+        position: absolute;
+        bottom: -9px;
+        &.cloudleft{
+            left: 0;
+        }
+        &.cloudright{
+            right: 0;
+        }
     }
-    color: #fff;
-    background: #ff7f2a;
-    padding: 7px 5px 7px;
+    .xpbox{
+        margin-top: 55px;
+        h5{
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        color: #fff;
+        background: #ff7f2a;
+        padding: 7px 5px 7px;
+    }
 }
+
 .profile{
     @include border-radius(100px);
 }

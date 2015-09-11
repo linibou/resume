@@ -26,10 +26,10 @@
         </div>
       </div>
     </header>
-    <section class="row">
-      <div class="small-4 columns text-left">
+    <section id="mainrow" class="row" data-equalizer>
+      <div class="small-4 columns text-left" data-equalizer-watch>
         <h4 class="jobs">Administrateur système</h4>
-        <p class="skills">
+        <p class="skills adminskills">
           Administration de serveurs (100+)<br>
           Gestion de sécurité, de sauvegardes<br>
           Optimisation des performances<br>
@@ -39,8 +39,11 @@
           Mise en place de monitoring<br>
           Formateur Apache / Sécurité web
         </p>
+        <div class="tagcloud cloudleft">
+          <img src="img/cloud_tag_admin_sys.png" alt="tags administrateur système" title="julien antony administrateur système">
+        </div>
       </div>
-      <div class="small-4 columns text-center">
+      <div class="small-4 columns text-center" data-equalizer-watch>
         <h4>10 ans<br>d'expérience</h4>
         <div class="xpbox">
           <h5>Depuis 2010</h5>
@@ -53,28 +56,6 @@
           Prizee.com<br>
           Administrateur système
         </div>
-      </div>
-      <div class="small-4 columns text-right">
-        <h4 class="jobs">Développeur web</h4>
-        <p class="skills">
-          Développement front et back<br>
-          Sites de présentation<br>
-          Sites e-commerce<br>
-          Applications Facebook<br>
-          API RestFul<br>
-          Developpement mobile<br>
-          Gestion de projet<br>
-          Collaboration en Anglais<br>
-          <a href="http://github.com/linibou" target="_blank" title="github linibou">http://github.com/linibou</a><br>
-          <a href="http://github.com/scopart" target="_blank" title="github Scopart">http://github.com/scopart</a>
-        </p>
-      </div>
-    </section>
-    <div class="row">
-      <div class="small-4 columns text-left">
-        <img src="img/cloud_tag_admin_sys.png" alt="tags administrateur système" title="julien antony administrateur système">
-      </div>
-      <div class="small-4 columns text-center">
         <div class="xpbox">
           <h5>2005</h5>
           Wanadoo<br>
@@ -87,10 +68,25 @@
           ressources informatiques
         </div>
       </div>
-      <div class="small-4 columns text-right">
-        <img src="img/cloud_tag_dev.png" alt="tags développeur web" title="julien antony développeur web">
+      <div class="small-4 columns text-right" data-equalizer-watch>
+        <h4 class="jobs">Développeur web</h4>
+        <p class="skills devskills">
+          Développement front et back<br>
+          Sites de présentation<br>
+          Sites e-commerce<br>
+          Applications Facebook<br>
+          API RestFul<br>
+          Developpement mobile<br>
+          Gestion de projet<br>
+          Collaboration en Anglais<br>
+          <a href="http://github.com/linibou" target="_blank" title="github linibou">http://github.com/linibou</a><br>
+          <a href="http://github.com/scopart" target="_blank" title="github Scopart">http://github.com/scopart</a>
+        </p>
+        <div class="tagcloud cloudright">
+          <img src="img/cloud_tag_dev.png" alt="tags développeur web" title="julien antony développeur web">
+        </div>
       </div>
-    </div>
+    </section>
     <section class="row">
       <div class="small-12 columns">
         <h3>Références</h3>
@@ -116,6 +112,7 @@
     </section>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
