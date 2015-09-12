@@ -11,16 +11,18 @@
     <header>
       <div class="row">
         <div class="small-12 medium-5 columns text-center">
-          <img class="profile" src="img/julien_antony.jpg" alt="julien antony" title="julien antony DevOp">
-          <h1>{DevOp}</h1>
+          <div class="profile">
+            <img id="avatar" src="img/julien_antony.jpg" alt="julien antony" title="julien antony DevOp">
+            <h1 id="devop">{DevOp}</h1>
+          </div>
         </div>
         <div class="small-12 medium-7 columns">
           <div class="contact text-center">
-            <h2>Julien ANTONY</h2>
+            <h2 id="name">Julien ANTONY</h2>
             <p class="contact">
-              36 ans<br>
-              <a href="tel:0632689107">06.32.68.91.07</a><br>
-              <a href="mailto:julienantony@gmail.com">julienantony@gmail.com</a>
+              <span id="age">36 ans</span><br>
+              <span id="phone"><a href="tel:0632689107">06 32 68 91 07</a></span><br>
+              <span id="mail"><a href="mailto:julienantony@gmail.com">julienantony@gmail.com</span></a>
             </p>
           </div>
         </div>
@@ -113,6 +115,12 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
+    <script src="js/TweenMax.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      $(document).ready(function(){
+        resume.main.Init();
+      });
+    </script>
   </body>
 </html>

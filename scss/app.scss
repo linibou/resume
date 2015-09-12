@@ -59,6 +59,14 @@ header{
             margin: 10px 0;
             font-size: rem-calc(20);
         }
+        h2, span{
+            position: relative;
+        }
+    }
+    .profile{
+        h1{
+            position: relative;
+        }
     }
 }
 
@@ -86,7 +94,7 @@ section{
     }
 }
 
-.profile{
+#avatar{
     @include border-radius(100px);
 }
 @media #{$small-up}{
