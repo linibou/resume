@@ -68,7 +68,7 @@ header{
             position: relative;
         }
         .picture{
-            height: 200px;
+                height: 200px;
         }
     }
 }
@@ -80,6 +80,7 @@ section{
 #mainrow{
     h4.jobs{
         margin-bottom: 40px;
+        font-size: rem-calc(22);
     }
     .skills{
         position: relative;

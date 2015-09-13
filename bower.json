@@ -1,6 +1,9 @@
 {
   "name": "foundation-libsass-template",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "zurb/bower-foundation",
+    "bootstrap": "~3.3.5",
+    "gsap": "~1.18.0",
+    "font-awesome": "~4.4.0"
   }
 }
