@@ -4,7 +4,10 @@ var resume = resume || {};
     resume.main = {
         Init: function(){
             $(document).foundation();
-            this.Anim();
+            $('<img/>').attr({'src':'img/julien_antony.jpg', 'id':'avatar', "alt":"julien antony", "title":"julien antony DevOp"}).load(function(){
+                $('.profile .picture').append(this);
+                resume.main.Anim();
+            });
         },
         Anim: function(){
             var tl = new TimelineLite();
