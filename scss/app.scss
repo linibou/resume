@@ -1,7 +1,6 @@
 @import "settings";
 @import "foundation";
 @import "mixins";
-
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
@@ -39,56 +38,58 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
-
 @import url(https://fonts.googleapis.com/css?family=Cantarell:400,700);
-
-h3,h4,h5{
+h3,
+h4,
+h5 {
     font-family: Cantarell "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-weight: bold;
 }
 
-header{
+header {
     background: #ff8b1f;
     padding: 20px 0 20px;
-    h1, h2{
+    h1,
+    h2 {
         font-family: $font-family-sans-serif;
     }
-    .contact{
+    .contact {
         margin: 0 auto;
-        p{
+        p {
             margin: 10px 0;
             font-size: rem-calc(20);
         }
-        h2, span{
+        h2,
+        span {
             position: relative;
         }
     }
-    .profile{
-        h1{
+    .profile {
+        h1 {
             position: relative;
         }
-        .picture{
-                height: 200px;
+        .picture {
+            height: 200px;
         }
     }
 }
 
-section{
+section {
     padding-top: 25px;
 }
 
-#mainrow{
-    h4.jobs{
+#mainrow {
+    h4.jobs {
         margin-bottom: 40px;
         font-size: rem-calc(22);
     }
-    .skills{
+    .skills {
         position: relative;
         line-height: 175%;
     }
-    .xpbox{
+    .xpbox {
         margin-top: 55px;
-        h5{
+        h5 {
             color: #fff;
             margin-bottom: 4px;
         }
@@ -98,64 +99,222 @@ section{
     }
 }
 
-#avatar{
+#avatar {
     @include border-radius(100px);
 }
-@media #{$small-up}{
-    #mainrow{
-        h4.jobs{
+
+@media #{$small-up} {
+    #mainrow {
+        h4.jobs {
             margin-bottom: 20px;
             margin-top: 30px;
         }
-        .skills{
+        .skills {
             line-height: 115%;
         }
-        .xpbox{
+        .xpbox {
             margin-top: 25px;
         }
-        .admincolumn, .devcolumn{
+        .admincolumn,
+        .devcolumn {
             text-align: center;
         }
     }
 }
 
-@media #{$medium-up}{
-    #mainrow{
-        .xpbox{
+@media #{$medium-up} {
+    #mainrow {
+        .xpbox {
             margin-top: 25px;
         }
-        .tagcloud{
+        .tagcloud {
             position: absolute;
             bottom: -9px;
-            &.cloudleft{
+            &.cloudleft {
                 left: 0;
             }
-            &.cloudright{
+            &.cloudright {
                 right: 0;
             }
         }
-        .devcolumn{
+        .devcolumn {
             text-align: right;
         }
-        .admincolumn{
+        .admincolumn {
             text-align: left;
         }
     }
 }
 
-@media #{$large-up}{
-    .contact{
+@media #{$large-up} {
+    .contact {
         display: inline-block;
         margin-top: 30px;
         margin-left: 50px;
     }
-    #mainrow{
-        .xpbox{
+    #mainrow {
+        .xpbox {
             margin-top: 55px;
         }
-        .skills{
+        .skills {
             line-height: 175%;
         }
     }
 }
 
+
+/* Sink */
+
+.hvr-sink {
+    display: inline-block;
+    vertical-align: baseline;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-sink:hover,
+.hvr-sink:focus,
+.hvr-sink:active {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+
+/* Wobble Vertical */
+
+@-webkit-keyframes hvr-wobble-vertical {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes hvr-wobble-vertical {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.hvr-wobble-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hvr-wobble-vertical:hover,
+.hvr-wobble-vertical:focus,
+.hvr-wobble-vertical:active {
+    -webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+/* Buzz */
+
+@-webkit-keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+@keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+.hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
