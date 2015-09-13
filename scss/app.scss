@@ -89,13 +89,16 @@ section {
     }
     .xpbox {
         margin-top: 55px;
+        color: #fff;
+        background: #ff7f2a;
+        padding: 7px 5px 7px;
         h5 {
             color: #fff;
             margin-bottom: 4px;
         }
-        color: #fff;
-        background: #ff7f2a;
-        padding: 7px 5px 7px;
+        a{
+            color: $iron;
+        }
     }
 }
 
