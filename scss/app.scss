@@ -130,16 +130,6 @@ section {
         .xpbox {
             margin-top: 25px;
         }
-        .tagcloud {
-            position: absolute;
-            bottom: -9px;
-            &.cloudleft {
-                left: 0;
-            }
-            &.cloudright {
-                right: 0;
-            }
-        }
         .devcolumn {
             text-align: right;
         }
@@ -157,7 +147,7 @@ section {
     }
     #mainrow {
         .xpbox {
-            margin-top: 55px;
+            margin-top: 44px;
         }
         .skills {
             line-height: 175%;
